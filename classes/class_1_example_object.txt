@@ -1,0 +1,18 @@
+class:
+fork
+
+attributes:
+utensil_function: "stab"
+material: "Metal"
+metal_fork_count: 55
+plastic_fork_count: 100
+clean (boolean): false
+
+cut: utensil_function = "cut"
+stab: utensil_function = "stab"
+scoop: utensil_function = "scoop"
+include_in_takeout: plastic_fork_count - 1
+set_in_dishwasher clean = true
+count_metal_utensil_inventory: metal_fork_count = 55
+count_plastic_utensil_inventory: plastic_fork_count = 99
+change_material: material = "plastic"
