@@ -1,0 +1,9 @@
+food = 'sushi'
+is_delicious = true
+food = 'korean bbq'
+num2 = 2
+num7 = 4
+quotient = num7 / num2 # ==> 2
+songs = ['100 Miles and Running', 'Ramble On', 'Hysteria', 'Friends']
+songs.delete_at(0) or songs.shift # ==> ['Ramble On', 'Hysteria', 'Friends']
+food.length # ==> 10
