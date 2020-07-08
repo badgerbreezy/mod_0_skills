@@ -1,0 +1,23 @@
+class:
+utensils
+
+attributes:
+utensil_function (string)
+material (string)
+metal_fork_count (integer)
+metal_spoon_count (integer)
+metal_knife_count (integer)
+plastic_fork_count (integer)
+plastic_spoon_count (integer)
+plastic_knife_count (integer)
+clean (boolean)
+
+methods:
+cut (modifies utensil_function attribute)
+stab (modifies utensil_function attribute)
+scoop (modifies utensil_function attribute)
+include_in_takeout (modifies the plastic_fork_count, plastic_spoon_count, and plastic_knife_count attributes)
+set_in_dishwasher (modifies the clean attribute)
+metal_utensil_inventory (modifies metal_fork_count, metal_knife_count, metal_spoon_count attributes)
+plastic_utensil_inventory (modifies plastic_fork_count, plastic_spoon_count, and plastic_knife_count attributes)
+change_material (modifies the material attribute)
