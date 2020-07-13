@@ -1,23 +1,14 @@
 class:
-utensil
+Utensil
 
 attributes:
-utensil_function (string)
-material (string)
-metal_fork_count (integer)
-metal_spoon_count (integer)
-metal_knife_count (integer)
-plastic_fork_count (integer)
-plastic_spoon_count (integer)
-plastic_knife_count (integer)
-clean (boolean)
+UtensilFunction (array)
+Material (string)
+UtensilInventory (integer)
+IsClean (boolean)
 
 methods:
-cut (modifies utensil_function attribute)
-stab (modifies utensil_function attribute)
-scoop (modifies utensil_function attribute)
-include_in_takeout (modifies the plastic_fork_count, plastic_spoon_count, and plastic_knife_count attributes by -1)
-set_in_dishwasher (modifies the clean attribute)
-count_metal_utensil_inventory (modifies metal_fork_count, metal_knife_count, metal_spoon_count attributes)
-count_plastic_utensil_inventory (modifies plastic_fork_count, plastic_spoon_count, and plastic_knife_count attributes)
-change_material (modifies the material attribute)
+UseUtensil: (modifies array to show appropriate functions of the utensil function)
+ChangeMaterial (modifies the material attribute)
+CountUtensilInventory: (displays current utensil class inventory)
+SetInDishwasher (modifies the clean attribute)

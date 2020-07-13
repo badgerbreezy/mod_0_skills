@@ -1,22 +1,13 @@
 class:
-utensil = dining_utensils
+Utensil = fork
 
 attributes:
 utensil_function: ["cut", "stab", "scoop"]
-material: "Metal"
-metal_fork_count: 55
-plastic_fork_count: 100
-clean (boolean): false
+material: "metal"
+utensil_inventory: 55
+is_clean: false
 
-cut: utensil_function = "cut"
-stab: utensil_function = "stab"
-scoop: utensil_function = "scoop"
-include_in_takeout: 100 - 1 = 99
-                    100 - 1 = 99
-                    100 - 1 = 99
-set_in_dishwasher: clean = true
-count_metal_utensil_inventory: metal_fork_count = 55
-count_plastic_utensil_inventory: plastic_fork_count = 99
-                                 plastic_knife_count = 99
-                                 plastic_spoon_count = 99
-change_material: material = "metal"
+use_utensil: utensil_function = ["cut", "stab"]
+change_material: material = "plastic"
+count_utensil_inventory: utensil_inventory = 55
+set_in_dishwasher: is_clean = true
