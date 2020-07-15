@@ -4,10 +4,11 @@ Utensil = fork
 attributes:
 utensil_function: ["cut", "stab", "scoop"]
 material: "metal"
-utensil_inventory: 55
+number_of_utensils: 55
+utensils_ld: 10
 is_clean: false
 
 use_utensil: utensil_function = ["cut", "stab"]
 change_material: material = "plastic"
-count_utensil_inventory: utensil_inventory = 55
+count_utensil_inventory: number_of_utensils - utensils_ld = 55 - 10 = 45
 set_in_dishwasher: is_clean = true

@@ -2,13 +2,14 @@ class:
 Utensil
 
 attributes:
-UtensilFunction (array)
-Material (string)
-UtensilInventory (integer)
-IsClean (boolean)
+utensil_function (array)
+material (string)
+number_of_utensils (integer)
+utensils_ld (integer)
+is_clean (boolean)
 
 methods:
-UseUtensil: (modifies array to show appropriate functions of the utensil function)
-ChangeMaterial (modifies the material attribute)
-CountUtensilInventory: (displays current utensil class inventory)
-SetInDishwasher (modifies the clean attribute)
+use_utensil: (modifies array to show appropriate functions of the utensil function)
+change_material (modifies the material attribute)
+count_utensil_inventory: (subtracts utensils_ld [lost and damaged] from number_of_utensils to give current inventory of utensil)
+set_in_dishwasher (modifies the clean attribute)

@@ -11,9 +11,9 @@ EmployeeName (string)
 
 
 methods:
-CookMeal (modifies cooking true or false)
-TakeCustomerOrder (modifies taking_customer_order true or false)
-CountTipsEarned (modifies tips_earned attribute)
-DisplaySalary (show current salary attribute)
-PayRaise (add raise_amount to current_salary)
-ChangeEmployeeName (updates employee name)
+cook_meal (modifies cooking true or false)
+take_customer_order (modifies taking_customer_order true or false)
+count_tips_earned (modifies tips_earned attribute)
+display_salary (show current salary attribute)
+pay_raise (add raise_amount to current_salary)
+change_employee_name (updates employee name)
