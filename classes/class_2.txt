@@ -1,19 +1,17 @@
 class:
-employee
+Employee
 
 attributes:
-Cooking (boolean)
-TakingCustomerOrder (boolean)
-TipsEarned (float)
-CurrentSalary (float)
-RaiseAmount (float)
-EmployeeName (string)
+cooking (boolean)
+taking_customer_order (boolean)
+current_salary (float)
+raise_amount (float)
+employee_name (string)
 
 
 methods:
 cook_meal (modifies cooking true or false)
 take_customer_order (modifies taking_customer_order true or false)
-count_tips_earned (modifies tips_earned attribute)
 display_salary (show current salary attribute)
 pay_raise (add raise_amount to current_salary)
 change_employee_name (updates employee name)

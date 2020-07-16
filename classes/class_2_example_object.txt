@@ -1,5 +1,5 @@
 class:
-employee = HeadChef
+Employee = head_chef
 
 attributes:
 cooking: true
@@ -12,7 +12,6 @@ employee_name: "Matt"
 methods:
 cook_meal: cooking = true
 take_customer_order: taking_customer_order = false
-count_tips_earned: tips_earned = 0.00
 display_salary: current_salary = 15.45
 pay_raise: 1.00 + 15.45 = 16.45
 change_employee_name: employee_name = "Oscar"
